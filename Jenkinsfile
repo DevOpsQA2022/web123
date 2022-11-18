@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
               echo 'successfully'
-              bat 'C:\Users\manjula.r\AppData\Local\Jenkins\.jenkins\workspace\web123.sln -c Release'
+              bat 'C:\Users\manjula.r\AppData\Local\Jenkins\.jenkins\workspace\web123.sln --configuration Release'
 //               sh 'mvn -f web12/pom.xml <goals>'
                //  sh "mv target/*.war target/web12.war"
             }
