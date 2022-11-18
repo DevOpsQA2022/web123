@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
               echo 'successfully'
-              sh(script: "dotnet publish  C:Usersmanjula.rAppDataLocalJenkins.jenkinsworkspaceweb123.sln --configuration Release")
+              bat 'dotnet publish  C:Usersmanjula.rAppDataLocalJenkins.jenkinsworkspaceweb123.sln --configuration Release'
             }
             post{
                  success{
