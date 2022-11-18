@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
               echo 'successfully'
-                sh 'mvn clean package'    
+               sh(script: "dotnet publish CustomersDemoClean-2017.sln -c Release ", returnStdout: true)
 //               sh 'mvn -f web12/pom.xml <goals>'
                //  sh "mv target/*.war target/web12.war"
             }
