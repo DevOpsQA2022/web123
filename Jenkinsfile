@@ -8,7 +8,7 @@ pipeline {
             steps {
               echo 'successfully'
 //                  sh 'mvn clean package'    
-              bat 'dotnet publish  C:Usersmanjula.rAppDataLocalJenkins.jenkinsworkspaceweb123.sln --configuration Release'
+              bat 'dotnet publish  C:Usersmanjula.rAppDataLocalJenkins.jenkinsworkspaceweb123  --configuration Release'
             }
             post{
                  success{
