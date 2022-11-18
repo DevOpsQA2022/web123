@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
               echo 'successfully'
-               sh(script: "dotnet publish CustomersDemoClean-2017.sln -c Release ", returnStdout: true)
+              bat 'C:\Users\manjula.r\AppData\Local\Jenkins\.jenkins\workspace\web123.sln -c Release'
 //               sh 'mvn -f web12/pom.xml <goals>'
                //  sh "mv target/*.war target/web12.war"
             }
