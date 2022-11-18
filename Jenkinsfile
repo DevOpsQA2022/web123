@@ -8,15 +8,15 @@ pipeline {
             steps {
               echo 'successfully'
                  sh 'mvn clean package'    
-//               bat 'dotnet publish  C:Usersmanjula.rAppDataLocalJenkins.jenkinsworkspaceweb123.sln --configuration Release'
+              bat 'dotnet publish  C:Usersmanjula.rAppDataLocalJenkins.jenkinsworkspaceweb123.sln --configuration Release'
             }
-//             post{
-//                  success{
-//                      echo "Archiving the Artifacts"
-//                      archiveArtifacts artifacts: '**/target/*.war'
+            post{
+                 success{
+                     echo "Archiving the Artifacts"
+                     archiveArtifacts artifacts: '**/target/*.war'
                     
-//                  }
-//             }
+                 }
+            }
         }
    
 //         stage ('Deploy') {
