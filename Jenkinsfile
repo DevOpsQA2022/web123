@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
               echo 'successfully'
-//               bat 'C:\Users\manjula.r\AppData\Local\Jenkins\.jenkins\workspace\web123 --configuration Release'
+              sh(script: "C:\Users\manjula.r\AppData\Local\Jenkins\.jenkins\workspace\web123 --configuration Release")
             }
             post{
                  success{
